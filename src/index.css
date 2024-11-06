@@ -1,0 +1,58 @@
+.pizza {
+  display: flex;
+  flex-direction: column; /* Stack title, description, and button vertically */
+  gap: 1.6rem; /* Space between the title, description, and button */
+  align-items: center; /* Center content horizontally */
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure it fills the width properly */
+}
+
+.pizza img {
+  width: 100%;
+  max-width: 12rem; /* Limit image size */
+  aspect-ratio: 1;
+  object-fit: cover; /* Ensure the image covers the space without distorting */
+}
+
+.pizza h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.8rem; /* Add space between title and description */
+}
+
+.pizza p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center; /* Ensure description is centered */
+  margin-bottom: auto;
+}
+
+.pizza button {
+  padding: 0.8rem 2.4rem;
+  background-color: #edc84b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pizza button:hover {
+  background-color: #e9bb24;
+}
+
+.pizza.sold-out {
+  color: #888;
+}
+
+.pizza.sold-out img {
+  filter: grayscale();
+  opacity: 0.8;
+}
