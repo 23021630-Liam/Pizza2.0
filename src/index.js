@@ -38,7 +38,7 @@ function Header({isOpen}) {
   );
 }
 
-const pizzaData = [   
+const pizzaData = [
   {
     name: "Focaccia",
     ingredients: "Bread with italian olive oil and rosemary",
